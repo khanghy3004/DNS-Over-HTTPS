@@ -1,0 +1,27 @@
+{
+  "name": "dns-over-https",
+  "version": "2.0.1",
+  "description": "",
+  "main": "https-to-dns-proxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "https": "node https-to-dns-proxy.js",
+    "dns": "node dns-to-https-proxy.js"
+  },
+  "keywords": [
+    "dns",
+    "DoH"
+  ],
+  "author": "hardillb@gmail.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dns-packet": "^5.3.1",
+    "dns2": "^2.0.1",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "redis": "^4.0.6",
+    "request": "^2.88.2",
+    "spdy": "^4.0.2"
+  }
+}

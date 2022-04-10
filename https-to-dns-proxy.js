@@ -17,6 +17,7 @@ function getRandomInt(min, max) {
 }
 
 var dnsServer = "8.8.8.8";
+var port = 443;
 
 if (process.argv.length == 3) {
   dnsServer = process.argv[2];
@@ -189,5 +190,5 @@ var options = {
 const server = spdy.createServer(options, app);
 
 server.listen(port ,() => {
-  console.log('Example app listening on port %d, querying %s!', port, dnsServer);
+  console.log('DoH app listening on port %d, querying %s!', port, dnsServer);
 });
